@@ -3,7 +3,7 @@ import streamlit as st
 from groq import Groq
 
 # Initialize Groq Client
-client = Groq(api_key=st.secrets["api"]["key"])  # Ensure the API key is set in environment variables
+client = Groq(api_key=st.secrets["api"]["groq_key"])  # Ensure the API key is set in environment variables
 
 def fetch_song_recommendations(song_name):
     """
